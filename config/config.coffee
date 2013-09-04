@@ -5,7 +5,7 @@ module.exports =
   development:
     db: 'mongodb://localhost/osl_admin_dev'
     root: rootPath
-    app:
+    app: 
       name: 'OSL admin'
-  test:
-  production:
+  test: {}
+  production:{}
