@@ -1,4 +1,6 @@
 # load contorllers
+location = require '../app/controllers/location'
+
 
 # expose routes
 
@@ -7,3 +9,5 @@ module.exports = (app) ->
     res.render 'index',
       title: 'OSL Admin'
   )
+  
+  app.get('/location', location.show)
