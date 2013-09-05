@@ -16,9 +16,14 @@
     "jade": "*",
     "mongoose": "*",
     "connect-mongo": "*",
-    "connect-flash": "*"
+    "connect-flash": "*",
+    "node-sass": "*"
   },
   "devDependencies": {
-    "nodemon": "*"
+    "nodemon": "*",
+    "grunt": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-coffee": "*",
+    "grunt-sass": "*"
   }
 }
