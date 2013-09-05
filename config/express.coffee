@@ -18,6 +18,7 @@ module.exports = (app, config) ->
   
   app.set 'views', config.root + '/app/views'
   app.set 'view engine', 'jade'
+  app.locals.basedir = config.root + '/app/views'
   
   app.configure ->
     app.use (req, res, next) ->

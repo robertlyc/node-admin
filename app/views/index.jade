@@ -2,26 +2,7 @@ extends layout
 
 block content
   #body-content.clearfix.row 
-    #left-side.col-lg-2
-      ul.well.nav.nav-pills.nav-stacked.nav-sitemenu.hidden-md
-        li
-          a(href='/') Home
-        li.nav-header Properties & Content
-        li
-          a(href='/location') Locations
-          a(href='#') Accomidation
-          a(href='#') City Guides
-        li.nav-header Booking Orders
-        li
-          a(href='#') New Enquiries
-          a(href='#') Inprocess
-          a(href='#') Completed
-          a(href='#') Canceled
-          a(href='#') Quick Enquiries
-        li.nav-header Graphic Reports
-        li
-          a(href='#') Daily Report
-          a(href='#') Weekly Report
+    include /includes/sidebar
     
     #content-block.col-lg-10
       .navbar.content-navbar.navbar-default(data-toggle='breakpoint', data-class-lg='navbar content-navbar')
