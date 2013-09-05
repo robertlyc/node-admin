@@ -1,0 +1,25 @@
+doctype 5
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/main.css')
+  body
+    .navbar.navbar-inverse.navbar-fixed-top
+      .navbar-header
+        a.navbar-brand(href='/') OSL Admin
+      .navbar-collapse.collapse
+        ul.nav.navbar-nav
+          li
+            a(href='#') 测试
+          li 
+            a(href='#') 测试
+          li 
+            a(href='#') 测试
+        ul.nav.navbar-nav.pull-right
+          li 
+            a(href='#') 欢迎,RoBeRt
+          li
+            a(href='#') 退出
+        
+    block content

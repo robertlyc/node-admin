@@ -1,0 +1,50 @@
+extends layout
+
+block content
+  #body-content.clearfix.row 
+    #left-side.col-lg-2
+      ul.well.nav.nav-pills.nav-stacked.nav-sitemenu.hidden-md
+        li
+          a(href='/') Home
+        li.nav-header Properties & Content
+        li
+          a(href='/location') Locations
+          a(href='#') Accomidation
+          a(href='#') City Guides
+        li.nav-header Booking Orders
+        li
+          a(href='#') New Enquiries
+          a(href='#') Inprocess
+          a(href='#') Completed
+          a(href='#') Canceled
+          a(href='#') Quick Enquiries
+        li.nav-header Graphic Reports
+        li
+          a(href='#') Daily Report
+          a(href='#') Weekly Report
+    
+    #content-block.col-lg-10
+      .navbar.content-navbar.navbar-default(data-toggle='breakpoint', data-class-lg='navbar content-navbar')
+        a.navbar-brand(data-toggle='collapse', data-target='#top-nav .nav-collapse') 日程安排
+      .dashboard.row
+        .col-sm-6.column.ui-sortable
+          #1.panel.panel-default.widget
+            .panel-heading
+              h3.panel-title 元首
+            .panel-body
+              h3 定制活动
+              p 人生赢家和Loser的区别就是，当他们很兴奋地说一件事情的时候，前者几乎都是你能听懂的，比如结婚了，买房了，泡到姑娘了。后者说的大多是你听不懂的事儿，比如什么Python出新版本了，代码出Bug了，Apache又有漏洞了，Deep Learning可以做并行了。
+          #2.panel.panel-default.widget
+            .panel-heading
+              h3.panel-title Daily Report
+            .panel-body
+              .tab-content
+                img(src='/images/test.png', width='503', height='300')
+        
+        .col-sm-6.column.ui-sortable
+          #3.panel.panel-default.widget
+            .panel-heading
+              h3.panel-title 小黄
+            .panel-body
+              h3 #bilibli#
+              p 影片由曾制作《匪帮说唱传奇》的制片人罗伯特·塔特尔和监制《战略特勤组》的制片人比尔·佩金斯合力打造，Barry Battles执导。 生长在阿拉巴...
