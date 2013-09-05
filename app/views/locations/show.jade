@@ -1,3 +1,11 @@
 extends ../layout
 
 block content
+  #body-content.clearfix.row 
+    include /includes/sidebar
+    
+    #content-block.col-md-10.col-sm-11
+      ul.breadcrumb
+        li
+          a(href='/') 首页
+        li locations
