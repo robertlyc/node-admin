@@ -41,9 +41,9 @@ module.exports = (app, config) ->
   app.use flash()
   
   app.use express.csrf()
-  app.use (req, res, next) ->
-    res.locals.csrf_token = req.session._csrf
-    next()
+  # app.use (req, res, next) ->
+  #   res.locals.csrf_token = req.session._csrf
+  #   next()
   
   app.use app.router
   

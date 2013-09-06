@@ -5,7 +5,18 @@ block content
     include /includes/sidebar
     
     #content-block.col-md-10.col-sm-11
-      ul.breadcrumb
-        li
-          a(href='/') 首页
-        li locations
+      include /includes/breadcrumb
+      .navbar.navbar-default.navbar-xs.content-navbar(data-toggle = 'breakpoint', data-class-xs='navbar content-navbar navbar-inverse navbar-xs', data-class-sm='navbar content-navbar navbar-default navbar-xs')
+        .navbar-header
+          button.navbar-toggle.pull-left(data-toggle='class', data-target="#body-content", data-class-name="show_menu" )
+            i.icon-list
+          a.navbar-toggle.pullright(href='#')
+            i.icon-plus.icon-white
+          button.navbar-toggle.pull-right(data-toggle='collapse', data-target='.content-navbar .navbar-collapse')
+            i.icon-filter.icon-white
+          a.navbar-brand(data-toggel='collapse', data-target='#top-nav .navbar-collapse')
+            i.icon-globe 国家
+        .navbar-collapse.collapse
+          form.navbar-form.navbar-left(method='get')
+            .input-group.search-group
+              input#searchbar.form-control(type='text',name='_q_', placeholder='Seache country')
