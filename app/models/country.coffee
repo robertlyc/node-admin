@@ -3,7 +3,7 @@ env = process.env.NODE_ENV || 'development'
 config = require('../../config/config')[env]
 Schema = mongoose.Schema 
 
-countrySchema = new Schema(
+CountrySchema = new Schema(
   name:[
     zh: 
       type: String, required: true
@@ -33,4 +33,4 @@ countrySchema = new Schema(
     type: Date, default: Date.now()
 )
 
-mongoose.model 'Country', countrySchema 
+mongoose.model 'Country', CountrySchema

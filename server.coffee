@@ -10,8 +10,8 @@ mongoose.connect config.db
 
 #models
 models_path = __dirname + '/app/models'
-# fs.readdirSync(models_path).forEach (file) ->
-#   require(models_path + '/' + file) if ~file.indexOf('.coffee')
+fs.readdirSync(models_path).forEach (file) ->
+  require(models_path + '/' + file) if ~file.indexOf('.coffee')
 
 #express
 app = express()

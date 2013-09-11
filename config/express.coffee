@@ -1,7 +1,7 @@
 express = require 'express'
 mongoStore = require('connect-mongo')(express)
 flash = require 'connect-flash'
-pkg = require('../package.json')
+pkg = require '../package.json'
 
 module.exports = (app, config) ->
   app.set 'showStackError', true
