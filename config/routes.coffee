@@ -10,4 +10,6 @@ module.exports = (app) ->
       title: 'OSL Admin'
   )
   
-  app.get('/location', location.show)
+  app.get('/location', location.list)
+  # app.get('/location/country/add', country.add)
+  app.post('/location', location.add)
