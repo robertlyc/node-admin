@@ -11,5 +11,4 @@ module.exports = (app) ->
   )
   
   app.get('/location', location.list)
-  # app.get('/location/country/add', country.add)
-  app.post('/location', location.add)
+  app.post('/location/add', location.add)
